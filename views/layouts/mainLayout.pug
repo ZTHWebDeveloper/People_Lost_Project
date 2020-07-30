@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{PageTitle}
+        //- For Phone Size
+
+        link(rel="stylesheet", href="/css/style.css")
+
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+        script(src="js/jqueryCode.js")
+
+        script(src="js/desing.js")
+        
+    body
+        //- Start Header and navbar
+        
+        header 
+            div#logo 
+                h1
+                    a(href="#")
+                        span.red N
+                        span a
+                        span.yello u
+                        span n
+                        span.green g &nbsp;
+                        span.color N
+                        span a
+                        span.color u
+                        span n
+                        span.color g
+        div.mainArea
+            nav#mainnav.group 
+                div#menu &#x2261; Menu
+                ul
+                    li
+                        a(href="#") Home
+                    li
+                        a(href="#") About 
+                    li  
+                        a(href="#") Contact 
+                    li
+                        a(href="#") Login
+            div.main_float 
+                div.text_content
+                    h1 Thank a lot for visiting in our website.
+                    button Get Started!!
+                div.RegisterForm 
+
+                    form(action="" method="post" class="form")
+                        legend Register Form
+                        div
+                            label(for="name") Name 
+                            input(type="text" name="name" class="input" placeholder="Name" autocomplete="off")
+                        div
+                            label(for="nmail") Email
+                            input(type="email" name="email" class="input" placeholder="Email" autocomplete="off")
+                        div
+                            label(for="password") Password
+                            input(type="password" name="password" class="input" placeholder="Password" autocomplete="off")
+                        div
+                            label(for="confirm") Confirm Password 
+                            input(type="password" name="confirm" class="input" placeholder="Confirm Password" autocomplete="off")
+                        div
+                            input(type="submit" name="register" value="Register" class="submit")
+ 
+        block content 

@@ -1,0 +1,351 @@
+@media(min-width: 1025px){
+    /* Start ContainerNavbar */
+    * {
+        box-sizing: border-box;
+      }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index:999;
+        padding: 25px 0px;
+      
+     }
+     .logo h2{
+        color:gold;
+        padding-left: 50px;
+    }
+    .sidepanel{
+       display: flex;
+       justify-content: space-around;
+       list-style: none;
+       padding-right: 50px;
+   }
+   .sidepanel li:nth-of-type(3){
+       padding-left:25px;
+       
+    }
+    .sidepanel li:nth-last-of-type(2){
+       padding-left:25px;
+       
+    }
+   .sidepanel a{
+       text-decoration: none;
+       font-size: 1.2em;
+       color:gold;
+   }
+/* End ContainerNavbar  */
+
+
+/* Start Navbar inside Image */
+    .image{
+        height: 730px;
+        background: linear-gradient(rgba(0, 0, 0, 0.767) ,transparent),url('/img/image2.jpg');
+        background-size: 100% 100%;
+        background-position: center;
+        background-attachment: fixed;
+        /* margin-top: 77px; */
+        margin-bottom: 30%;
+    }
+    .image .ImageNavbar{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index:999;
+        background:teal;
+        padding: 25px 0px;
+    }
+    .ImageLogo h2{
+        color:gold;
+        padding-left: 50px;
+    }
+    .ImageNavItem ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding-right: 50px;
+    }
+    .ImageNavItem a{
+        text-decoration: none;
+        font-size: 1.2em;
+        color: gold;
+    }
+    .ImageNavItem li:nth-of-type(3){
+        padding-left:25px;
+        
+     }
+     .ImageNavItem li:nth-last-of-type(2){
+        padding-left:25px;
+        
+     }
+     
+/* End Navbar inside image */
+
+
+
+    .textCenter{
+        position: relative;
+        top: 20%;
+        width: 40%;
+        padding-left: 40px;
+      
+       
+    }
+    .textCenter h1{
+        color: white;
+        font-size: 5em;
+        text-shadow: 5px 5px 7px black;
+        margin-bottom: 20px;
+    }
+
+    .textCenter button{
+        padding: 10px 20px;
+        background: transparent;
+        border: 1px solid green;
+        border-radius: 3px;
+        transition: 0.5s;
+        color:yellow;
+        font-size: 1em;
+        margin-left: 100px;
+    }
+    .textCenter button:hover{
+        background: rgba(0, 255, 98, 0.431);
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    .textBox {
+        position: absolute;
+        z-index: 900;
+        top: 75%;
+        left: 45%;
+        
+    }
+    .textBox h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+    }
+    .imageBox{
+        width: 80%;
+        margin: 0 auto;
+        padding: 120px 100px;
+        /* padding-top: 300px; */
+        background:rgba(0, 0, 0, 0.212);
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 25%;
+       border-radius: 10px;
+    }
+    .imageBox .image-item {
+        padding:0px 20px;
+       
+    }
+    .imageBox .image-item img{
+           background-size: 100% 100%;
+           width: 100%;
+           height: 270px;
+           box-shadow: 4px 4px 10px black;
+           border-radius: 10px;
+    }
+    .image-item{
+        position: relative;
+    }
+    .overlay{
+        position: absolute;
+        background-color: #00BCBA;
+        overflow: hidden;
+        width: 80%;
+        bottom: 0;
+        left: 21px;
+        right: 0;
+        height: 100%;
+        transform: scale(0);
+        transition: .3s ease;
+    }
+    .image-item:hover .overlay{
+        transform: scale(1);
+        padding:0px 10px;
+        border-radius: 10px;
+    }
+    .image-item .overlay h2{
+        color: black;
+        font-size: 1.4em;
+    }
+    .image-item .overlay p{
+        padding:10px 0px;
+        color: black;
+    }
+    .image-item .overlay .textColor{
+        padding:10px 0px;
+        color: #ddd;
+        font-size: 1.2em;
+    }
+    .image-item .overlay button{
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding:13px;
+        background: black;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+    .main{
+        background: rgba(102, 51, 153, 0.712);
+    }
+    .main .textAlign{
+        text-align: center;
+    }
+    .main .textAlign h1{
+        color: white;
+        font-size: 2em;
+        padding-top: 50px;
+    }
+    .parentSection{
+        padding: 100px 50px;
+        overflow: hidden;
+        justify-content: space-between;
+        width: 93%;
+        margin: 0 auto;
+       
+    }
+    .parentSection .item-imge{
+        width: 45%;
+        float: left;
+       
+    }
+    .parentSection .item-imge img{
+        background-size: 100% 50%;
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        border: 3px solid rgba(0, 0, 0, 0.151);
+        padding: 20px;
+        box-shadow: 4px 4px 10px black;
+        opacity: 0;
+        transition: all 0.6s ease-in-out 0s;
+    }
+   
+    .parentSection .item-content{
+        float: right;
+        width: 45%;
+        opacity: 0;
+        transition: all 0.6s ease-in-out 0s;
+       
+    }
+    .parentSection .item-content p{
+        text-align: justify;
+        font-size: 1.1em;
+    }
+    .contentMessage{
+        /* background: black; */
+        background: rgba(0, 0, 0, 0.198);
+        margin-top: 8%;
+    }
+    .contentMessage .contentText{
+        padding-top: 50px;
+        text-align: center;
+        /* color: #fff; */
+    }
+    .messageOne{
+        padding-top: 5%;
+        width: 93%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 250px 430px 250px 430px;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-gap:10px 10px;
+    }
+    .messageOne .messageImage img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .messageOne .messageText p{
+        /* color: #fff; */
+        padding-top: 50px;
+        text-align: justify;
+        
+    }
+    .fullStack h1{
+        color: #fff;
+        text-align: center;
+        padding-bottom: 40px;
+        font-size: 2.5em;
+    }
+    .teamLeader{
+        background:linear-gradient(rgba(0, 0, 0, 0.822) ,transparent),url('/img/developer2.webp');
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 5%;
+        /* background-attachment: fixed; */
+        height: 800px;
+    }
+    .teamLeader .Leader {
+        width: 25%;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 4px 4px 10px black;
+    }
+    .teamLeader .Leader .cardTitle img{
+        background-size:100% 100%;
+        width: 100%;
+        height: 200px;
+    }
+    .teamLeader .Leader .cardBody h2 {
+      text-align: center;
+      color: rebeccapurple;
+    }
+    .teamLeader .Leader .cardBody .textColor{
+        color: rebeccapurple;
+        padding-top: 20px;
+        text-align: center;
+        font-size:1.2em;
+    }
+    .teamLeader .Leader .cardBody p{
+        color: rebeccapurple;
+        padding: 10px 20px;
+        font-size:1.1em;
+        text-align: justify;
+    }
+    .teamLeader .Leader .cardFooter button{
+        border: 1px solid brown;
+        display: inline-block;
+        padding:25px;
+        background: brown;
+        color: gold;
+        font-size: 1.1em;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+    .contact{
+        background: black;
+        height: 500px;
+    }
+    .scrollTop {
+        position: fixed;
+        right: 10%;
+        bottom: 10px;
+        /* background-color: #BE3F48; */
+        background: brown;
+
+        padding: 20px;
+        opacity: 0;
+        transition: all 0.4s ease-in-out 0s;
+      }
+      .scrollTop a {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+      }
+    
+   
+}
